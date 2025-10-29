@@ -4,7 +4,11 @@ export default function Home() {
   return (
     <main className="main-wrap">
       <div className="bg-bear">
-        <img src="/bear.png" alt="bear" style={width: '90%', maxWidth: 1200} />
+        <img
+  src="/bear.png"
+  alt="bear"
+  style={{ width: '90%', maxWidth: 1200 }}
+/> />
       </div>
 
       <div className="hero-card fade-in">
