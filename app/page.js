@@ -8,7 +8,7 @@ export default function Home() {
   src="/bear.png"
   alt="bear"
   style={{ width: '90%', maxWidth: 1200 }}
-/> />
+/>
       </div>
 
       <div className="hero-card fade-in">
