@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --pink-1: #ff2d95;
+  --purple-1: #8b00ff;
+  --btn-start: linear-gradient(90deg,#6effb0,#00e3ff);
+}
+
+html,body,#__next{height:100%;}
+
+body{
+  @apply bg-gradient-to-br from-pink-500 to-purple-800 text-white antialiased;
+  background: linear-gradient(135deg, #ff4da6 0%, #8b00ff 100%);
+}
+
+.main-wrap{
+  @apply min-h-screen flex items-center justify-center px-4 relative overflow-hidden;
+}
+
+.bg-bear{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.20;
+}
+
+.hero-card{
+  @apply relative z-10 max-w-3xl w-full text-center;
+}
+
+.title{
+  @apply text-6xl font-extrabold drop-shadow-lg;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  letter-spacing: -0.02em;
+}
+
+.subtitle{
+  @apply text-lg text-gray-200 mt-2 mb-6;
+}
+
+.buy-btn{
+  @apply inline-block px-8 py-3 rounded-full font-bold text-pink-600 bg-white shadow-xl transform transition hover:scale-105;
+}
+
+.fade-in{
+  animation: fadeIn .9s ease both;
+}
+@keyframes fadeIn{
+  from{opacity:0; transform: translateY(10px);}
+  to{opacity:1; transform: translateY(0);}
+}
