@@ -1,0 +1,1 @@
+Warbase Tailwind Next.js template - drop into GitHub and deploy on Vercel.
